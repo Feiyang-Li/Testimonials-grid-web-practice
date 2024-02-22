@@ -1,0 +1,142 @@
+
+
+
+#testimonialBlocks {
+    display:flex;
+    margin: 10px;
+    padding: 20px;
+    flex-direction:column;
+    align-items:center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.testiBlock{
+    /* This is a flex box */
+    box-sizing: border-box;
+    width: 375px;
+    min-height: 100px;
+    background-color: #CBED77;
+    padding: 32px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 30px -9px #000000;
+    position: relative;
+    line-height: auto;
+    margin: 12px;
+}
+.testiBlock h2{
+    margin-top: 0px;
+}
+
+.prof-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.top-section{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 20px;
+    font-size: 13px;
+    z-index: 1;
+}
+
+.main-passage{
+    font-size: 13px;    
+}
+
+
+#testimonialBlocks .name{
+    font-weight: bold;
+}
+
+#Block1 {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 81%);
+}
+
+#Block1 .status{
+    color:hsl(0, 0%, 70%);
+}
+
+#Block1 .addon-quotation{
+    position: absolute;
+    left: 60%;
+    top: 4%;
+    opacity: 0.6;
+}
+
+#Block2{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 81%);
+}
+
+#Block2 .status{
+    color:hsl(0, 0%, 70%);
+}
+
+#Block3, #Block5{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+#Block4{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+}
+#Block4 .status{
+    color:hsl(0, 0%, 70%);
+}
+
+#Block4 .prof-pic{
+    border: 3px solid hsl(263, 55%, 52%);
+}
+
+@media (min-width: 1000px) {
+    .testiBlock{
+        width: auto;
+        height: auto;
+    }
+    #testimonialBlocks{
+        position: fixed;
+
+        max-width: 1500px;
+        flex-direction:row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    #left-testi-box{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    #right-testi-box{
+        flex-basis: 20%;
+    }
+
+    #up-section{
+        display:flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    #down-section{
+        display:flex;
+        flex-direction: row;
+    }
+
+    #Block1, #Block4{
+        flex-basis: 70%;
+    }
+    #Block2, #Block3{
+        flex-basis: 30%;
+    }
+    #Block5{
+        height:95%;
+    }
+
+}
